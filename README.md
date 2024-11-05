@@ -14,6 +14,9 @@ We provide:
 
 We show that model trained with AudioSetCaps achieves SOTA result on audio captioning (e.g., 84.8 CIDEr) and audio retrieval task (e.g., R@1 43.4-T2A & 57.3-A2T). 
 
+![ASC pipeline overview](example/overview_TASLP.png)
+*Overview of the proposed automated caption generation pipeline.*
+
 ## :loudspeaker: News 
 **2024-10**: Our full-length paper will be publicly available soon. Please stay tuned for the update!
 
@@ -37,16 +40,24 @@ Note that:
 
 For the 4M subset of YouTube-8M, you can download it through [Google Drive](https://drive.google.com/drive/folders/1ZKyRZw3AhS3HkWivgMqtMODB0TkVPNk5?usp=sharing).
 
-![example/scaling.pdf](example/scaling.png)
+![Scaling and wordcloud](example/scale&wordcloud.png)
+
+## Table of Contents
+
+
+- [AudioSetCaps](https://github.com/JishengBai/AudioSetCaps)
+  - [Pipeline scripts](https://github.com/JishengBai/AudioSetCaps/tree/main/pipeline)
+  - [Evaluate pre-trained models for audio-language tasks](https://github.com/JishengBai/AudioSetCaps/tree/main/eval_script)
+  
 
 ## Example
 
 For each audio clip, we assign a caption to it. Associated with the audio, there are also three Q&A pairs, which were used as the metadata to generate the final caption.
 
-| ID            | Audio            | Captions  | Q&A captions 1 | Q&A captions 2 | Q&A captions 3 |
-|--------------------|--------------------|----------|-------------------------|-------------------------|-------------------------|
-|_7Xe9vD3Hpg_4_10|     [-_7Xe9vD3Hpg_4_10.mp3](https://github.com/JishengBai/AudioSetCaps/raw/refs/heads/main/example/-_7Xe9vD3Hpg_4_10.mp3)  | A solemn instrumental piece unfolds, featuring the melancholic strains of a cello and the resonant tolling of a bell. The initial tempo is slow and deliberate, gradually building intensity with each successive bell ring.   |         **Question: Describe this audio according to the sounds in it.** *Answer: The music starts with a slow string melody and continues with a bass note. The sound of a bell rings and the music becomes more intense.*         |            **Question: Based on the QAs, give some information about the speech, such as the emotion of the speaker, the gender of the speaker, and the spoken language, only if speech is present in this audio.** *Answer: I'm sorry, but there is no speech in the audio.*         |   **Question: Based on the QAs, give some information about the music, such as music genre and music instruments, only if music is present in this audio.** *Answer: The music genre is instrumental. The music instruments are the cello and the bell.*         |  
-|-TL8Mp3xcUM_0_10|     [-TL8Mp3xcUM_0_10.mp3](https://github.com/JishengBai/AudioSetCaps/raw/refs/heads/main/example/-TL8Mp3xcUM_0_10.mp3)  | A woman expresses strong emotions with a noticeably high-pitched vocal tone.   |         **Question: Describe this audio according to the sounds in it.** *Answer: A woman speaks with a high-pitched voice.*         |            **Question: Based on the QAs, give some information about the speech, such as the emotion of the speaker, the gender of the speaker, and the spoken language, only if speech is present in this audio.** *Answer: The speech is emotional, as the woman speaks in a high-pitched voice.*         |   **Question: Based on the QAs, give some information about the music, such as music genre and music instruments, only if music is present in this audio.** *Answer: There is no music in this audio.*         |  
+| Audio            | Captions  | Q&A captions 1 | Q&A captions 2 | Q&A captions 3 |
+|------------------|----------|-------------------------|-------------------------|-------------------------|
+|[-_7Xe9vD3Hpg_4_10.mp3](https://github.com/JishengBai/AudioSetCaps/raw/refs/heads/main/example/-_7Xe9vD3Hpg_4_10.mp3)  | A solemn instrumental piece unfolds, featuring the melancholic strains of a cello and the resonant tolling of a bell. The initial tempo is slow and deliberate, gradually building intensity with each successive bell ring.   |         **Question: Describe this audio according to the sounds in it.** *Answer: The music starts with a slow string melody and continues with a bass note. The sound of a bell rings and the music becomes more intense.*         |            **Question: Based on the QAs, give some information about the speech, such as the emotion of the speaker, the gender of the speaker, and the spoken language, only if speech is present in this audio.** *Answer: I'm sorry, but there is no speech in the audio.*         |   **Question: Based on the QAs, give some information about the music, such as music genre and music instruments, only if music is present in this audio.** *Answer: The music genre is instrumental. The music instruments are the cello and the bell.*         |  
+|[-TL8Mp3xcUM_0_10.mp3](https://github.com/JishengBai/AudioSetCaps/raw/refs/heads/main/example/-TL8Mp3xcUM_0_10.mp3)  | A woman expresses strong emotions with a noticeably high-pitched vocal tone.   |         **Question: Describe this audio according to the sounds in it.** *Answer: A woman speaks with a high-pitched voice.*         |            **Question: Based on the QAs, give some information about the speech, such as the emotion of the speaker, the gender of the speaker, and the spoken language, only if speech is present in this audio.** *Answer: The speech is emotional, as the woman speaks in a high-pitched voice.*         |   **Question: Based on the QAs, give some information about the music, such as music genre and music instruments, only if music is present in this audio.** *Answer: There is no music in this audio.*         |  
 
 <!-- ## Models and datasets 
 We provide pre-trained models and datasets on [Hugging Face](https://huggingface.co/datasets/baijs/AudioSetCaps)
