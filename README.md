@@ -35,8 +35,8 @@ We provide the caption and Q&A data for the following three datasets:
 
 Note that:
 1. There are potential overlap between these three datasets.
-2. AudioSet and VGGSound evaluation set is included, so please use it with caution.
-3. We only use 4M of the audio in the YouTube-8M dataset, as most of the videos are not available any more.
+2. ‼️ **AudioCaps and VGGSound evaluation set are included in the metadata of AudioSetCaps, so please use them cautiously. We suggest adding pre-filtering to the AudioSetCaps dataset to exclude data for evaluation before model training.**
+3. We only use 4M of the audio in the YouTube-8M dataset, as most of the videos are no longer available.
 
 For the 4M subset of YouTube-8M, you can download it through [Google Drive](https://drive.google.com/drive/folders/1ZKyRZw3AhS3HkWivgMqtMODB0TkVPNk5?usp=sharing).
 
