@@ -16,7 +16,7 @@ We show that model trained with AudioSetCaps achieves SOTA result on audio capti
 *Overview of the proposed automated caption generation pipeline.*
 
 ## :loudspeaker: News 
-**2024-10**: Our full-length paper will be publicly available soon. Please stay tuned for the update!
+**2024-12**: Our full-length paper is publicly available on [arXiv](https://arxiv.org/pdf/2411.18953).
 
 **2024-10**: To appear at [NeurIPS 2024 Audio Imagination Workshop](https://openreview.net/group?id=NeurIPS.cc/2024/Workshop/Audio_Imagination#tab-accept): NeurIPS 2024 Workshop AI-Driven Speech, Music, and Sound Generation.
 
@@ -71,12 +71,20 @@ Evaluation codes for reproduce results of pre-trained models
 
 
 ## Cite
-If you found this repo is helpful, please consider citing our paper:
+If you found this repo is helpful, please consider citing our papers:
+```bibtex
+@article{bai2024audiosetcaps,
+  title={AudioSetCaps: An Enriched Audio-Caption Dataset using Automated Generation Pipeline with Large Audio and Language Models},
+  author={Bai, Jisheng and Liu, Haohe and Wang, Mou and Shi, Dongyuan and Wang, Wenwu and Plumbley, Mark D and Gan, Woon-Seng and Chen, Jianfeng},
+  journal={arXiv preprint arXiv:2411.18953},
+  year={2024}
+}
+```
 ```bibtex
 @inproceedings{
-bai2024audiosetcaps,
+bai2024audiosetcapsnipsws,
 title={AudioSetCaps: Enriched Audio Captioning Dataset Generation Using Large Audio Language Models},
-author={JISHENG BAI and Haohe Liu and Mou Wang and Dongyuan Shi and Wenwu Wang and Mark D Plumbley and Woon-Seng Gan and Jianfeng Chen},
+author={Bai, Jisheng and Liu, Haohe and Wang, Mou and Shi, Dongyuan and Wang, Wenwu and Plumbley, Mark D and Gan, Woon-Seng and Chen, Jianfeng},
 booktitle={Audio Imagination: NeurIPS 2024 Workshop AI-Driven Speech, Music, and Sound Generation},
 year={2024},
 url={https://openreview.net/forum?id=uez4PMZwzP}
